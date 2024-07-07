@@ -1,5 +1,6 @@
 package net.goldfoxyt.met.datagen;
 
+import com.sun.jna.Function;
 import net.goldfoxyt.met.Met;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
@@ -15,18 +16,16 @@ import java.util.concurrent.CompletableFuture;
 @Mod.EventBusSubscriber(modid = Met.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class DataGenerators {
     @SubscribeEvent
-    public static <T> void gatherData(GatherDataEvent event) {
+    public static void gatherData(GatherDataEvent event) {
 
         DataGenerator generator = event.getGenerator();
         PackOutput packOutput = generator.getPackOutput();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
-        Function
-
 
         generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput, lookupProvider));
         generator.addProvider(event.includeServer(), ModLootTableProvider.create(packOutput, lookupProvider));
         generator.addProvider(event.includeServer(), new ModBlockTagGenerator(packOutput, lookupProvider, existingFileHelper));
-        generator.addProvider(event.includeClient(), new ModBlockStateProvider(packOutput, lookupProvider, existingFileHelper));
+        generator.addProvider(event.includeClient(), new ModBlockStateProvider(packOutput, existingFileHelper));
     }
 }
