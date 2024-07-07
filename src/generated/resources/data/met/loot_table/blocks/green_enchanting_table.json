@@ -20,11 +20,11 @@
               "source": "block_entity"
             }
           ],
-          "name": "met:blue_enchanting_table"
+          "name": "met:green_enchanting_table"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "met:blocks/blue_enchanting_table"
+  "random_sequence": "met:blocks/green_enchanting_table"
 }

@@ -1,23 +1,23 @@
-[07Jul2024 03:32:02.416] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 17, --assetsDir, C:\Users\bijad\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, met, --all, --output, D:\GoldFoxYT\Coding\mods\Colorful Enchanting Tables\src\generated\resources, --existing, D:\GoldFoxYT\Coding\mods\Colorful Enchanting Tables\src\main\resources]
-[07Jul2024 03:32:02.432] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 21.0.2+13-LTS-58
-[07Jul2024 03:32:02.437] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.1 starting: java version 21.0.2 by Oracle Corporation; OS Windows 11 arch amd64 version 10.0
-[07Jul2024 03:32:02.853] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
-[07Jul2024 03:32:03.434] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=jar:file:///C:/Users/bijad/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar!/ Service=ModLauncher Env=UNKNOWN
-[07Jul2024 03:32:08.233] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[07Jul2024 03:32:11.734] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\bijad\.gradle\caches\forge_gradle\assets, --assetIndex, 17, --mod, met, --all, --output, D:\GoldFoxYT\Coding\mods\Colorful Enchanting Tables\src\generated\resources, --existing, D:\GoldFoxYT\Coding\mods\Colorful Enchanting Tables\src\main\resources]
-[07Jul2024 03:32:39.165] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 51.0.21, for MC 1.21 with MCP 20240613.102039
-[07Jul2024 03:32:39.166] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v51.0.21 Initialized
-[07Jul2024 03:32:39.307] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
-[07Jul2024 03:32:43.917] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [met]
-[07Jul2024 03:32:44.539] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/D:/GoldFoxYT/Coding/mods/Colorful%20Enchanting%20Tables/build/fg_cache/net/minecraftforge/forge/1.21-51.0.21_mapped_parchment_2024.06.23-1.21/forge-1.21-51.0.21_mapped_parchment_2024.06.23-1.21.jar%230!/assets/.mcassetsroot' uses unexpected schema
-[07Jul2024 03:32:44.544] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/D:/GoldFoxYT/Coding/mods/Colorful%20Enchanting%20Tables/build/fg_cache/net/minecraftforge/forge/1.21-51.0.21_mapped_parchment_2024.06.23-1.21/forge-1.21-51.0.21_mapped_parchment_2024.06.23-1.21.jar%230!/data/.mcassetsroot' uses unexpected schema
-[07Jul2024 03:32:45.391] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[07Jul2024 03:32:46.479] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 1085 ms
-[07Jul2024 03:32:46.480] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[07Jul2024 03:32:46.537] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 55 ms
-[07Jul2024 03:32:46.537] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block Tags
-[07Jul2024 03:32:46.566] [main/INFO] [net.minecraft.data.DataGenerator/]: Block Tags finished after 27 ms
-[07Jul2024 03:32:46.567] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: met
-[07Jul2024 03:32:47.171] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: met finished after 603 ms
-[07Jul2024 03:32:47.172] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 1782 ms
-[07Jul2024 03:32:47.200] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 8, old count: 8, new count: 9, removed stale: 0, written: 0
+[07Jul2024 23:07:12.182] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 17, --assetsDir, C:\Users\bijad\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, met, --all, --output, D:\GoldFoxYT\Coding\mods\Colorful Enchanting Tables\src\generated\resources, --existing, D:\GoldFoxYT\Coding\mods\Colorful Enchanting Tables\src\main\resources]
+[07Jul2024 23:07:12.190] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 21.0.2+13-LTS-58
+[07Jul2024 23:07:12.194] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.1 starting: java version 21.0.2 by Oracle Corporation; OS Windows 11 arch amd64 version 10.0
+[07Jul2024 23:07:12.407] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
+[07Jul2024 23:07:12.636] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=jar:file:///C:/Users/bijad/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar!/ Service=ModLauncher Env=UNKNOWN
+[07Jul2024 23:07:14.576] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[07Jul2024 23:07:15.937] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\bijad\.gradle\caches\forge_gradle\assets, --assetIndex, 17, --mod, met, --all, --output, D:\GoldFoxYT\Coding\mods\Colorful Enchanting Tables\src\generated\resources, --existing, D:\GoldFoxYT\Coding\mods\Colorful Enchanting Tables\src\main\resources]
+[07Jul2024 23:07:24.718] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 51.0.21, for MC 1.21 with MCP 20240613.102039
+[07Jul2024 23:07:24.719] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v51.0.21 Initialized
+[07Jul2024 23:07:24.771] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
+[07Jul2024 23:07:25.846] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [met]
+[07Jul2024 23:07:25.982] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/D:/GoldFoxYT/Coding/mods/Colorful%20Enchanting%20Tables/build/fg_cache/net/minecraftforge/forge/1.21-51.0.21_mapped_parchment_2024.06.23-1.21/forge-1.21-51.0.21_mapped_parchment_2024.06.23-1.21.jar%230!/assets/.mcassetsroot' uses unexpected schema
+[07Jul2024 23:07:25.983] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/D:/GoldFoxYT/Coding/mods/Colorful%20Enchanting%20Tables/build/fg_cache/net/minecraftforge/forge/1.21-51.0.21_mapped_parchment_2024.06.23-1.21/forge-1.21-51.0.21_mapped_parchment_2024.06.23-1.21.jar%230!/data/.mcassetsroot' uses unexpected schema
+[07Jul2024 23:07:26.303] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[07Jul2024 23:07:26.643] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 339 ms
+[07Jul2024 23:07:26.643] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[07Jul2024 23:07:26.670] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 26 ms
+[07Jul2024 23:07:26.670] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block Tags
+[07Jul2024 23:07:26.681] [main/INFO] [net.minecraft.data.DataGenerator/]: Block Tags finished after 10 ms
+[07Jul2024 23:07:26.682] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: met
+[07Jul2024 23:07:26.895] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: met finished after 212 ms
+[07Jul2024 23:07:26.895] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 592 ms
+[07Jul2024 23:07:26.914] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 18, old count: 10, new count: 19, removed stale: 0, written: 11

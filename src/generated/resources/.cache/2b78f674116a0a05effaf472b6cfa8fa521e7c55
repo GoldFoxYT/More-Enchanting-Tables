@@ -1,4 +1,7 @@
-// 1.21	2024-07-07T03:15:18.7252176	Block States: met
+// 1.21	2024-07-07T23:07:26.9011721	Block States: met
 e73b6b4bd42f244d0d331e71b9a8d4c45d55b400 assets/met/blockstates/blue_enchanting_table.json
+b4950407cb0b3e27e7dab3632a758719764385de assets/met/blockstates/green_enchanting_table.json
 cba73ee0f6d3c35009493355bea6498dae3e4bfe assets/met/models/block/blue_enchanting_table.json
+6e5b883493221cce6729dfbf2419a0095117c7d7 assets/met/models/block/green_enchanting_table.json
 0c6b432ba202ba9b5127ca2aea3e5cc7647a1c59 assets/met/models/item/blue_enchanting_table.json
+71c6d117b8f92ee86870231be61f7069837deb12 assets/met/models/item/green_enchanting_table.json

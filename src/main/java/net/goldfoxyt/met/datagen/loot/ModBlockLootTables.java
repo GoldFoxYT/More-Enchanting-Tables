@@ -6,13 +6,13 @@ import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.HashSet;
 import java.util.Set;
 
 public class ModBlockLootTables extends BlockLootSubProvider{
-    private static final float[] JUNGLE_LEAVES_SAPLING_CHANGES = new float[]{0.025F, 0.027777778F, 0.03125F, 0.041666668F, 0.1F};
     private static final Set<Item> EXPLOSION_RESISTANT = new HashSet<>();
 
     public ModBlockLootTables(HolderLookup.Provider provider) {
@@ -21,7 +21,8 @@ public class ModBlockLootTables extends BlockLootSubProvider{
 
     @Override
     protected void generate() {
-        this.dropSelf(ModBlocks.BLUE_ENCHANTING_TABLE.get());
+        this.add(ModBlocks.BLUE_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
+        this.add(ModBlocks.GREEN_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
     }
 
     @Override

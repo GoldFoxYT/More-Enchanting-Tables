@@ -1,3 +1,9 @@
-// 1.21	2024-07-03T21:40:37.3684211	Recipes
+// 1.21	2024-07-07T23:07:26.9000786	Recipes
 d449325551ad4624df7a9058751055d728821257 data/met/advancement/recipes/decorations/blue_enchanting_table.json
+78ef74358642367e9084eae69353da34cc9df927 data/met/advancement/recipes/decorations/blue_enchanting_table_from_blue_dye.json
+54dc56db365f1bd561f60f569f240d63c36cb293 data/met/advancement/recipes/decorations/green_enchanting_table.json
+41cbbd8ab1ef603fa9e37754299eb08eb7fc4cae data/met/advancement/recipes/decorations/green_enchanting_table_from_green_dye.json
 bb802d751a67e442232ed102ac7202e699abd638 data/met/recipe/blue_enchanting_table.json
+0d838245cedd733a69f1bee189e21d5ee736ce92 data/met/recipe/blue_enchanting_table_from_blue_dye.json
+ac1a32aebd38e5439236dc16ae6e3615cb509be2 data/met/recipe/green_enchanting_table.json
+248db2f4f1f8109ae0e2716d459c061109a329bb data/met/recipe/green_enchanting_table_from_green_dye.json

@@ -1,9 +1,11 @@
 package net.goldfoxyt.met.datagen;
 
+import net.goldfoxyt.met.Met;
 import net.goldfoxyt.met.block.ModBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
@@ -27,5 +29,28 @@ public class ModRecipeProvider  extends RecipeProvider implements IConditionBuil
                 .define('O', Items.OBSIDIAN)
                 .unlockedBy("has_obsidian", has(Blocks.OBSIDIAN))
                 .save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, ModBlocks.BLUE_ENCHANTING_TABLE.get())
+                .requires(Blocks.ENCHANTING_TABLE)
+                .requires(Items.BLUE_DYE)
+                .unlockedBy("has_obsidian", has(Blocks.OBSIDIAN))
+                .save(recipeOutput, Met.MOD_ID + ":blue_enchanting_table_from_blue_dye");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.GREEN_ENCHANTING_TABLE.get())
+                .pattern(" B ")
+                .pattern("DCD")
+                .pattern("DOD")
+                .define('B', Items.BOOK)
+                .define('D', Items.DIAMOND)
+                .define('C', Items.GREEN_CARPET)
+                .define('O', Items.OBSIDIAN)
+                .unlockedBy("has_obsidian", has(Blocks.OBSIDIAN))
+                .save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, ModBlocks.GREEN_ENCHANTING_TABLE.get())
+                .requires(Blocks.ENCHANTING_TABLE)
+                .requires(Items.GREEN_DYE)
+                .unlockedBy("has_obsidian", has(Blocks.OBSIDIAN))
+                .save(recipeOutput, Met.MOD_ID + ":green_enchanting_table_from_green_dye");
     }
 }
