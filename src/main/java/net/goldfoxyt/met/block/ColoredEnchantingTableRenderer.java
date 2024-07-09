@@ -3,6 +3,7 @@ package net.goldfoxyt.met.block;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Axis;
+import net.goldfoxyt.met.Met;
 import net.minecraft.client.model.BookModel;
 import net.minecraft.client.model.geom.ModelLayers;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -13,7 +14,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 
 public class ColoredEnchantingTableRenderer implements BlockEntityRenderer<ColoredEnchantingTableBlockEntity> {
-    public static final ResourceLocation BOOK_TEXTURE = ResourceLocation.tryParse("resources/assets/met/textures/entity/colored_enchanting_table_book.png");
+    public static final ResourceLocation BOOK_TEXTURE = ResourceLocation.fromNamespaceAndPath(Met.MOD_ID,("textures/entity/colored_enchanting_table_book.png"));
     private final BookModel bookModel;
 
     public ColoredEnchantingTableRenderer(BlockEntityRendererProvider.Context context) {
@@ -44,7 +45,7 @@ public class ColoredEnchantingTableRenderer implements BlockEntityRenderer<Color
         float f6 = Mth.lerp(partialTick, blockEntity.oOpen, blockEntity.open);
         this.bookModel.setupAnim(f, Mth.clamp(f4, 0.0F, 1.0F), Mth.clamp(f5, 0.0F, 1.0F), f6);
         VertexConsumer vertexconsumer = bufferSource.getBuffer(RenderType.entitySolid(BOOK_TEXTURE));
-        this.bookModel.render(poseStack, vertexconsumer, packedLight, packedOverlay, 1);
+        this.bookModel.render(poseStack, vertexconsumer, packedLight, packedOverlay, -1);
 
         poseStack.popPose();
     }
