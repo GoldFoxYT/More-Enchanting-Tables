@@ -1,6 +1,7 @@
-package net.goldfoxyt.met.block;
+package net.goldfoxyt.met.block.blockentity;
 
 import net.goldfoxyt.met.Met;
+import net.goldfoxyt.met.block.ModBlocks;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;

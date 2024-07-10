@@ -1,19 +1,15 @@
 package net.goldfoxyt.met;
 
 import com.mojang.logging.LogUtils;
-import net.goldfoxyt.met.block.ColoredEnchantingTableRenderer;
-import net.goldfoxyt.met.block.ModBlockEntities;
+import net.goldfoxyt.met.block.blockentity.ColoredEnchantingTableRenderer;
+import net.goldfoxyt.met.block.blockentity.ModBlockEntities;
 import net.goldfoxyt.met.block.ModBlocks;
 import net.goldfoxyt.met.item.ModItems;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.packs.resources.Resource;
-import net.minecraft.server.packs.resources.ResourceManagerReloadListener;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.AddReloadListenerEvent;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;

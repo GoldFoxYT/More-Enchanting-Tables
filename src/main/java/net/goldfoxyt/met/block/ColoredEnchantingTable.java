@@ -4,6 +4,10 @@ import com.mojang.serialization.MapCodec;
 import java.util.Iterator;
 import java.util.List;
 import javax.annotation.Nullable;
+
+import net.goldfoxyt.met.block.blockentity.ColoredEnchantingTableBlockEntity;
+import net.goldfoxyt.met.block.blockentity.ModBlockEntities;
+import net.goldfoxyt.met.customenchantingmenu.ModEnchantmentMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
@@ -15,17 +19,14 @@ import net.minecraft.world.Nameable;
 import net.minecraft.world.SimpleMenuProvider;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.ContainerLevelAccess;
-import net.minecraft.world.inventory.EnchantmentMenu;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.EnchantingTableBlock;
 import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
-import net.minecraft.world.level.block.entity.EnchantingTableBlockEntity;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.pathfinder.PathComputationType;
@@ -84,14 +85,13 @@ public class ColoredEnchantingTable extends BaseEntityBlock {
 
     @Nullable
     @Override
-    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState state, BlockEntityType<T> type) {
-        if (level.isClientSide) {
+    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level pLevel, BlockState blockState, BlockEntityType<T> type) {
+        if (pLevel.isClientSide) {
             return createTickerHelper(type, ModBlockEntities.COLORED_ENCHANTING_TABLE.get(),
                     ColoredEnchantingTableBlockEntity::bookAnimationTick);
         }
         return null;
     }
-
     protected InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, BlockHitResult pHitResult) {
         if (pLevel.isClientSide) {
             return InteractionResult.SUCCESS;
@@ -100,7 +100,6 @@ public class ColoredEnchantingTable extends BaseEntityBlock {
             return InteractionResult.CONSUME;
         }
     }
-
     @Nullable
     @Override
     public MenuProvider getMenuProvider(BlockState pState, Level pLevel, BlockPos pPos) {
@@ -108,7 +107,7 @@ public class ColoredEnchantingTable extends BaseEntityBlock {
         if (blockentity instanceof ColoredEnchantingTableBlockEntity) {
             Component component = ((Nameable)blockentity).getDisplayName();
             return new SimpleMenuProvider((p_328554_, p_332165_, p_330050_) -> {
-                return new EnchantmentMenu(p_328554_, p_332165_, ContainerLevelAccess.create(pLevel, pPos));
+                return new ModEnchantmentMenu(p_328554_, p_332165_, ContainerLevelAccess.create(pLevel, pPos));
             }, component);
         } else {
             return null;

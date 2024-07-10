@@ -1,6 +1,7 @@
-package net.goldfoxyt.met.block;
+package net.goldfoxyt.met.block.blockentity;
 
 import javax.annotation.Nullable;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.component.DataComponentMap;
@@ -16,7 +17,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class ColoredEnchantingTableBlockEntity extends BlockEntity implements Nameable {
+public class ColoredEnchantingTableBlockEntity extends BlockEntity implements Nameable{
     public int time;
     public float flip;
     public float oFlip;

@@ -1,4 +1,4 @@
-package net.goldfoxyt.met.block;
+package net.goldfoxyt.met.block.blockentity;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
