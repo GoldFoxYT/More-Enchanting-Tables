@@ -13,9 +13,12 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
+
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, Met.MOD_ID);
+    public static final DeferredRegister<Item> ITEMS =
+            DeferredRegister.create(ForgeRegistries.ITEMS, Met.MOD_ID);
 
     public static final RegistryObject<Block> BLUE_ENCHANTING_TABLE = registerBlock("blue_enchanting_table",
             () -> new ColoredEnchantingTable(Block.Properties.ofFullCopy(Blocks.ENCHANTING_TABLE).mapColor(MapColor.COLOR_BLUE).requiresCorrectToolForDrops()));
@@ -27,12 +30,8 @@ public class ModBlocks {
         registerBlockItem(name, toReturn);
         return toReturn;
     }
-
-    public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, Met.MOD_ID);
-
-    private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
-        ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+    private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
+        return ModBlocks.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
     public static void registerBlocks(IEventBus eventBus) {

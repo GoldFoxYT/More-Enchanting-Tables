@@ -7,7 +7,6 @@ import javax.annotation.Nullable;
 
 import net.goldfoxyt.met.block.blockentity.ColoredEnchantingTableBlockEntity;
 import net.goldfoxyt.met.block.blockentity.ModBlockEntities;
-import net.goldfoxyt.met.customenchantingmenu.ModEnchantmentMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
@@ -19,6 +18,7 @@ import net.minecraft.world.Nameable;
 import net.minecraft.world.SimpleMenuProvider;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.ContainerLevelAccess;
+import net.minecraft.world.inventory.EnchantmentMenu;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.BaseEntityBlock;
@@ -107,7 +107,7 @@ public class ColoredEnchantingTable extends BaseEntityBlock {
         if (blockentity instanceof ColoredEnchantingTableBlockEntity) {
             Component component = ((Nameable)blockentity).getDisplayName();
             return new SimpleMenuProvider((p_328554_, p_332165_, p_330050_) -> {
-                return new ModEnchantmentMenu(p_328554_, p_332165_, ContainerLevelAccess.create(pLevel, pPos));
+                return new EnchantmentMenu(p_328554_, p_332165_, ContainerLevelAccess.create(pLevel, pPos));
             }, component);
         } else {
             return null;
