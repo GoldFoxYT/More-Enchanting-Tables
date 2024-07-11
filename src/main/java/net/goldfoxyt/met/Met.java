@@ -4,7 +4,6 @@ import com.mojang.logging.LogUtils;
 import net.goldfoxyt.met.block.blockentity.ColoredEnchantingTableRenderer;
 import net.goldfoxyt.met.block.blockentity.ModBlockEntities;
 import net.goldfoxyt.met.block.ModBlocks;
-import net.goldfoxyt.met.item.ModItems;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -34,8 +33,8 @@ public class Met {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-        ModBlocks.register(modEventBus);
-        ModItems.register(modEventBus);
+        ModBlocks.registerBlocks(modEventBus);
+        ModBlocks.registerItems(modEventBus);
         ModBlockEntities.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);

@@ -1,13 +1,10 @@
 package net.goldfoxyt.met.block;
 
 import net.goldfoxyt.met.Met;
-import net.goldfoxyt.met.item.ModItems;
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.EnchantingTableBlock;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -31,11 +28,17 @@ public class ModBlocks {
         return toReturn;
     }
 
-    private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
-        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+    public static final DeferredRegister<Item> ITEMS =
+            DeferredRegister.create(ForgeRegistries.ITEMS, Met.MOD_ID);
+
+    private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
+        ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
-    public static void register(IEventBus eventBus) {
+    public static void registerBlocks(IEventBus eventBus) {
         BLOCKS.register(eventBus);
+    }
+    public static void registerItems(IEventBus eventBus){
+        ITEMS.register(eventBus);
     }
 }
