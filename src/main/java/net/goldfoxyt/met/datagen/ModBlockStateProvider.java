@@ -19,6 +19,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        createCustomEnchantingTable(ModBlocks.WHITE_ENCHANTING_TABLE);
+        createCustomEnchantingTable(ModBlocks.ORANGE_ENCHANTING_TABLE);
         createCustomEnchantingTable(ModBlocks.BLUE_ENCHANTING_TABLE);
         createCustomEnchantingTable(ModBlocks.GREEN_ENCHANTING_TABLE);
     }

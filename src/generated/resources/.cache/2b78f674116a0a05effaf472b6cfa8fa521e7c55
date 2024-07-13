@@ -1,7 +1,13 @@
-// 1.21	2024-07-07T23:07:26.9011721	Block States: met
+// 1.21	2024-07-13T03:10:35.7072447	Block States: met
 e73b6b4bd42f244d0d331e71b9a8d4c45d55b400 assets/met/blockstates/blue_enchanting_table.json
 b4950407cb0b3e27e7dab3632a758719764385de assets/met/blockstates/green_enchanting_table.json
+d2a96ebee25c982c89709e6c0e233bfd2dfbe4c9 assets/met/blockstates/orange_enchanting_table.json
+d8d2a79d703a2b8d34f6ca7ff3f20df2196406cc assets/met/blockstates/white_enchanting_table.json
 cba73ee0f6d3c35009493355bea6498dae3e4bfe assets/met/models/block/blue_enchanting_table.json
 6e5b883493221cce6729dfbf2419a0095117c7d7 assets/met/models/block/green_enchanting_table.json
+21a77f3cd05b106537811275df6e46221b57e9c3 assets/met/models/block/orange_enchanting_table.json
+d63a34328491fbbbce5e94e73eb7495b1a4d678b assets/met/models/block/white_enchanting_table.json
 0c6b432ba202ba9b5127ca2aea3e5cc7647a1c59 assets/met/models/item/blue_enchanting_table.json
 71c6d117b8f92ee86870231be61f7069837deb12 assets/met/models/item/green_enchanting_table.json
+065daccd4e11cf5b12f20629a704cf8114a58c28 assets/met/models/item/orange_enchanting_table.json
+5f82fa5911a5724c3fe7a3e551197d2483e8dd5a assets/met/models/item/white_enchanting_table.json

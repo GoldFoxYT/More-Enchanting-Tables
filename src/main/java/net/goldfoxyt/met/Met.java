@@ -48,10 +48,12 @@ public class Met {
     }
 
     // Add the example block item to the building blocks tab
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
+    private void addCreative(BuildCreativeModeTabContentsEvent event){
         if (event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS){
-            event.accept(ModBlocks.BLUE_ENCHANTING_TABLE.get());
-            event.accept(ModBlocks.GREEN_ENCHANTING_TABLE.get());
+            event.accept(ModBlocks.WHITE_ENCHANTING_TABLE);
+            event.accept(ModBlocks.ORANGE_ENCHANTING_TABLE);
+            event.accept(ModBlocks.BLUE_ENCHANTING_TABLE);
+            event.accept(ModBlocks.GREEN_ENCHANTING_TABLE);
         }
     }
 
@@ -66,9 +68,7 @@ public class Met {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            event.enqueueWork(() -> {
-                BlockEntityRenderers.register(ModBlockEntities.COLORED_ENCHANTING_TABLE.get(), ColoredEnchantingTableRenderer::new);
-            });
+            event.enqueueWork(() -> BlockEntityRenderers.register(ModBlockEntities.COLORED_ENCHANTING_TABLE.get(), ColoredEnchantingTableRenderer::new));
         }
     }
     @SubscribeEvent

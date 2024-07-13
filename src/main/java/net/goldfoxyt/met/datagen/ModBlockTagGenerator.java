@@ -22,13 +22,16 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider pProvider) {
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.BLUE_ENCHANTING_TABLE.get(),
+                .add(ModBlocks.WHITE_ENCHANTING_TABLE.get(),
+                        ModBlocks.ORANGE_ENCHANTING_TABLE.get(),
+                        (ModBlocks.BLUE_ENCHANTING_TABLE.get()),
                         ModBlocks.GREEN_ENCHANTING_TABLE.get());
 
 
-
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.BLUE_ENCHANTING_TABLE.get(),
+                .add(ModBlocks.WHITE_ENCHANTING_TABLE.get(),
+                        ModBlocks.ORANGE_ENCHANTING_TABLE.get(),
+                        ModBlocks.BLUE_ENCHANTING_TABLE.get(),
                         ModBlocks.GREEN_ENCHANTING_TABLE.get());
 
 

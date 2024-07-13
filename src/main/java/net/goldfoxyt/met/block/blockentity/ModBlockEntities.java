@@ -13,6 +13,8 @@ public class ModBlockEntities {
 
     public static final RegistryObject<BlockEntityType<ColoredEnchantingTableBlockEntity>> COLORED_ENCHANTING_TABLE = BLOCK_ENTITIES.register("colored_enchanting_table",
             () -> BlockEntityType.Builder.of(ColoredEnchantingTableBlockEntity::new,
+                            ModBlocks.WHITE_ENCHANTING_TABLE.get(),
+                            ModBlocks.ORANGE_ENCHANTING_TABLE.get(),
                             ModBlocks.BLUE_ENCHANTING_TABLE.get(),
                             ModBlocks.GREEN_ENCHANTING_TABLE.get())
                     .build(null));

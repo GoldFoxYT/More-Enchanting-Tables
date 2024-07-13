@@ -3,7 +3,6 @@ package net.goldfoxyt.met.block.blockentity;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Axis;
-import net.goldfoxyt.met.Met;
 import net.minecraft.client.model.BookModel;
 import net.minecraft.client.model.geom.ModelLayers;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -13,8 +12,10 @@ import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 
+import static java.lang.Math.PI;
+
 public class ColoredEnchantingTableRenderer implements BlockEntityRenderer<ColoredEnchantingTableBlockEntity> {
-    public static final ResourceLocation BOOK_TEXTURE = ResourceLocation.fromNamespaceAndPath(Met.MOD_ID,("textures/entity/colored_enchanting_table_book.png"));
+    public static final ResourceLocation BOOK_TEXTURE = ResourceLocation.withDefaultNamespace("textures/entity/enchanting_table_book.png");
     private final BookModel bookModel;
 
     public ColoredEnchantingTableRenderer(BlockEntityRendererProvider.Context context) {
@@ -29,11 +30,11 @@ public class ColoredEnchantingTableRenderer implements BlockEntityRenderer<Color
         poseStack.translate(0.0D, 0.1F + Mth.sin(f * 0.1F) * 0.01F, 0.0D);
 
         float f1;
-        for(f1 = blockEntity.rot - blockEntity.oRot; f1 >= (float)Math.PI; f1 -= ((float)Math.PI * 2F)) {
+        for(f1 = blockEntity.rot - blockEntity.oRot; f1 >= (float) PI; f1 -= ((float) PI * 2F)) {
         }
 
-        while(f1 < -(float)Math.PI) {
-            f1 += ((float)Math.PI * 2F);
+        while(f1 < -(float) PI) {
+            f1 += ((float) PI * 2F);
         }
 
         float f2 = blockEntity.oRot + f1 * partialTick;
