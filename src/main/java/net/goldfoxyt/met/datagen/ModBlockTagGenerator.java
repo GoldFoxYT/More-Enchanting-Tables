@@ -5,7 +5,6 @@ import net.goldfoxyt.met.block.ModBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
-import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -24,7 +23,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.WHITE_ENCHANTING_TABLE.get(),
                         ModBlocks.ORANGE_ENCHANTING_TABLE.get(),
-                        (ModBlocks.BLUE_ENCHANTING_TABLE.get()),
+                        ModBlocks.MAGENTA_ENCHANTING_TABLE.get(),
+                        ModBlocks.BLUE_ENCHANTING_TABLE.get(),
                         ModBlocks.GREEN_ENCHANTING_TABLE.get());
 
 

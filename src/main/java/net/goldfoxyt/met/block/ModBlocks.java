@@ -24,15 +24,14 @@ public class ModBlocks {
             () -> new ColoredEnchantingTable(Block.Properties.ofFullCopy(Blocks.ENCHANTING_TABLE).mapColor(DyeColor.WHITE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> ORANGE_ENCHANTING_TABLE = registerBlock("orange_enchanting_table",
             () -> new ColoredEnchantingTable(Block.Properties.ofFullCopy(Blocks.ENCHANTING_TABLE).mapColor(DyeColor.ORANGE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> MAGENTA_ENCHANTING_TABLE = registerBlock("magenta_enchanting_table",
+            () -> new ColoredEnchantingTable(Block.Properties.ofFullCopy(Blocks.ENCHANTING_TABLE).mapColor(DyeColor.MAGENTA).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> BLUE_ENCHANTING_TABLE = registerBlock("blue_enchanting_table",
             () -> new ColoredEnchantingTable(Block.Properties.ofFullCopy(Blocks.ENCHANTING_TABLE).mapColor(DyeColor.BLUE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> GREEN_ENCHANTING_TABLE = registerBlock("green_enchanting_table",
             () -> new ColoredEnchantingTable(Block.Properties.ofFullCopy(Blocks.ENCHANTING_TABLE).mapColor(DyeColor.GREEN).requiresCorrectToolForDrops()));
 
     /*
-    WHITE
-    ORANGE
-    MAGENTA
     LIGHT_BLUE
     YELLOW
     LIME

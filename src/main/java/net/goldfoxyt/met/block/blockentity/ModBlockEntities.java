@@ -15,6 +15,7 @@ public class ModBlockEntities {
             () -> BlockEntityType.Builder.of(ColoredEnchantingTableBlockEntity::new,
                             ModBlocks.WHITE_ENCHANTING_TABLE.get(),
                             ModBlocks.ORANGE_ENCHANTING_TABLE.get(),
+                            ModBlocks.MAGENTA_ENCHANTING_TABLE.get(),
                             ModBlocks.BLUE_ENCHANTING_TABLE.get(),
                             ModBlocks.GREEN_ENCHANTING_TABLE.get())
                     .build(null));

@@ -52,6 +52,7 @@ public class Met {
         if (event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS){
             event.accept(ModBlocks.WHITE_ENCHANTING_TABLE);
             event.accept(ModBlocks.ORANGE_ENCHANTING_TABLE);
+            event.accept(ModBlocks.MAGENTA_ENCHANTING_TABLE);
             event.accept(ModBlocks.BLUE_ENCHANTING_TABLE);
             event.accept(ModBlocks.GREEN_ENCHANTING_TABLE);
         }

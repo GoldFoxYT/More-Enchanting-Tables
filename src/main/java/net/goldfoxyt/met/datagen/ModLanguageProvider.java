@@ -16,6 +16,7 @@ public class ModLanguageProvider extends LanguageProvider{
     protected void addTranslations() {
         addBlock(WHITE_ENCHANTING_TABLE, "White Enchanting Table");
         addBlock(ORANGE_ENCHANTING_TABLE, "Orange Enchanting Table");
+        addBlock(MAGENTA_ENCHANTING_TABLE, "Magenta Enchanting Table");
         addBlock(BLUE_ENCHANTING_TABLE, "Blue Enchanting Table");
         addBlock(GREEN_ENCHANTING_TABLE, "Green Enchanting Table");
     }

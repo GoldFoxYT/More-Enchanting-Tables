@@ -86,5 +86,22 @@ public class ModRecipeProvider  extends RecipeProvider implements IConditionBuil
                 .requires(Items.ORANGE_DYE)
                 .unlockedBy("has_obsidian", has(Blocks.OBSIDIAN))
                 .save(recipeOutput, Met.MOD_ID + ":orange_enchanting_table_from_orange_dye");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.MAGENTA_ENCHANTING_TABLE.get())
+                .pattern(" B ")
+                .pattern("DCD")
+                .pattern("DOD")
+                .define('B', Items.BOOK)
+                .define('D', Items.DIAMOND)
+                .define('C', Items.MAGENTA_CARPET)
+                .define('O', Items.OBSIDIAN)
+                .unlockedBy("has_obsidian", has(Blocks.OBSIDIAN))
+                .save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, ModBlocks.MAGENTA_ENCHANTING_TABLE.get())
+                .requires(Blocks.ENCHANTING_TABLE)
+                .requires(Items.MAGENTA_DYE)
+                .unlockedBy("has_obsidian", has(Blocks.OBSIDIAN))
+                .save(recipeOutput, Met.MOD_ID + ":magenta_enchanting_table_from_magenta_dye");
     }
 }
