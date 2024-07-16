@@ -1,107 +1,53 @@
 package net.goldfoxyt.met.datagen;
 
 import net.goldfoxyt.met.Met;
-import net.goldfoxyt.met.block.ModBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
+import net.minecraftforge.registries.RegistryObject;
 
 import java.util.concurrent.CompletableFuture;
 
-public class ModRecipeProvider  extends RecipeProvider implements IConditionBuilder {
-    public ModRecipeProvider(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> future) {
-        super(packOutput, future);
+import static net.goldfoxyt.met.block.ModBlocks.*;
+import static net.minecraft.world.item.Items.*;
+
+public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
+
+
+    public ModRecipeProvider(PackOutput pOutput, CompletableFuture<HolderLookup.Provider> pRegistries) {
+        super(pOutput, pRegistries);
     }
 
     @Override
-    protected void buildRecipes(RecipeOutput recipeOutput) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.BLUE_ENCHANTING_TABLE.get())
+    protected void buildRecipes(RecipeOutput pRecipeOutput) {
+        addEnchantingTableRecipes(pRecipeOutput, WHITE_ENCHANTING_TABLE, WHITE_CARPET, WHITE_DYE);
+        addEnchantingTableRecipes(pRecipeOutput, ORANGE_ENCHANTING_TABLE, ORANGE_CARPET, ORANGE_DYE);
+        addEnchantingTableRecipes(pRecipeOutput, MAGENTA_ENCHANTING_TABLE, MAGENTA_CARPET, MAGENTA_DYE);
+        addEnchantingTableRecipes(pRecipeOutput, BLUE_ENCHANTING_TABLE, BLUE_CARPET, BLUE_DYE);
+        addEnchantingTableRecipes(pRecipeOutput, GREEN_ENCHANTING_TABLE, GREEN_CARPET, GREEN_DYE);
+    }
+    public void addEnchantingTableRecipes(RecipeOutput recipeOutput, RegistryObject<Block> block, Item carpetItem, Item dyeItem) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, block.get())
                 .pattern(" B ")
                 .pattern("DCD")
                 .pattern("DOD")
                 .define('B', Items.BOOK)
                 .define('D', Items.DIAMOND)
-                .define('C', Items.BLUE_CARPET)
+                .define('C', carpetItem)
                 .define('O', Items.OBSIDIAN)
                 .unlockedBy("has_obsidian", has(Blocks.OBSIDIAN))
                 .save(recipeOutput);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, ModBlocks.BLUE_ENCHANTING_TABLE.get())
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, block.get())
                 .requires(Blocks.ENCHANTING_TABLE)
-                .requires(Items.BLUE_DYE)
+                .requires(dyeItem)
                 .unlockedBy("has_obsidian", has(Blocks.OBSIDIAN))
-                .save(recipeOutput, Met.MOD_ID + ":blue_enchanting_table_from_blue_dye");
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.GREEN_ENCHANTING_TABLE.get())
-                .pattern(" B ")
-                .pattern("DCD")
-                .pattern("DOD")
-                .define('B', Items.BOOK)
-                .define('D', Items.DIAMOND)
-                .define('C', Items.GREEN_CARPET)
-                .define('O', Items.OBSIDIAN)
-                .unlockedBy("has_obsidian", has(Blocks.OBSIDIAN))
-                .save(recipeOutput);
-
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, ModBlocks.GREEN_ENCHANTING_TABLE.get())
-                .requires(Blocks.ENCHANTING_TABLE)
-                .requires(Items.GREEN_DYE)
-                .unlockedBy("has_obsidian", has(Blocks.OBSIDIAN))
-                .save(recipeOutput, Met.MOD_ID + ":green_enchanting_table_from_green_dye");
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.WHITE_ENCHANTING_TABLE.get())
-                .pattern(" B ")
-                .pattern("DCD")
-                .pattern("DOD")
-                .define('B', Items.BOOK)
-                .define('D', Items.DIAMOND)
-                .define('C', Items.WHITE_CARPET)
-                .define('O', Items.OBSIDIAN)
-                .unlockedBy("has_obsidian", has(Blocks.OBSIDIAN))
-                .save(recipeOutput);
-
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, ModBlocks.WHITE_ENCHANTING_TABLE.get())
-                .requires(Blocks.ENCHANTING_TABLE)
-                .requires(Items.WHITE_DYE)
-                .unlockedBy("has_obsidian", has(Blocks.OBSIDIAN))
-                .save(recipeOutput, Met.MOD_ID + ":white_enchanting_table_from_white_dye");
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.ORANGE_ENCHANTING_TABLE.get())
-                .pattern(" B ")
-                .pattern("DCD")
-                .pattern("DOD")
-                .define('B', Items.BOOK)
-                .define('D', Items.DIAMOND)
-                .define('C', Items.ORANGE_CARPET)
-                .define('O', Items.OBSIDIAN)
-                .unlockedBy("has_obsidian", has(Blocks.OBSIDIAN))
-                .save(recipeOutput);
-
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, ModBlocks.ORANGE_ENCHANTING_TABLE.get())
-                .requires(Blocks.ENCHANTING_TABLE)
-                .requires(Items.ORANGE_DYE)
-                .unlockedBy("has_obsidian", has(Blocks.OBSIDIAN))
-                .save(recipeOutput, Met.MOD_ID + ":orange_enchanting_table_from_orange_dye");
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.MAGENTA_ENCHANTING_TABLE.get())
-                .pattern(" B ")
-                .pattern("DCD")
-                .pattern("DOD")
-                .define('B', Items.BOOK)
-                .define('D', Items.DIAMOND)
-                .define('C', Items.MAGENTA_CARPET)
-                .define('O', Items.OBSIDIAN)
-                .unlockedBy("has_obsidian", has(Blocks.OBSIDIAN))
-                .save(recipeOutput);
-
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, ModBlocks.MAGENTA_ENCHANTING_TABLE.get())
-                .requires(Blocks.ENCHANTING_TABLE)
-                .requires(Items.MAGENTA_DYE)
-                .unlockedBy("has_obsidian", has(Blocks.OBSIDIAN))
-                .save(recipeOutput, Met.MOD_ID + ":magenta_enchanting_table_from_magenta_dye");
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(Met.MOD_ID, block.getId().getPath() + "_from_" + getItemName(dyeItem)));
     }
 }

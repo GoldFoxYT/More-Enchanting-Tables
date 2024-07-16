@@ -1,4 +1,4 @@
-package net.goldfoxyt.met.datagen;
+package net.goldfoxyt.met.datagen.loot;
 
 import net.goldfoxyt.met.Met;
 import net.minecraft.data.PackOutput;

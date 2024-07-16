@@ -1,10 +1,9 @@
 package net.goldfoxyt.met.datagen;
 
-import com.sun.jna.Function;
 import net.goldfoxyt.met.Met;
+import net.goldfoxyt.met.datagen.loot.ModLanguageProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.data.DataProvider;
 import net.minecraft.data.PackOutput;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
