@@ -11,6 +11,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
+import static net.goldfoxyt.met.block.ModBlocks.*;
+
 public class ModBlockTagGenerator extends BlockTagsProvider {
     public ModBlockTagGenerator(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider,
                                 @Nullable ExistingFileHelper existingFileHelper) {
@@ -21,35 +23,39 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider pProvider) {
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.WHITE_ENCHANTING_TABLE.get(),
-                        ModBlocks.ORANGE_ENCHANTING_TABLE.get(),
-                        ModBlocks.MAGENTA_ENCHANTING_TABLE.get(),
-                        ModBlocks.LIGHT_BLUE_ENCHANTING_TABLE.get(),
-                        ModBlocks.YELLOW_ENCHANTING_TABLE.get(),
-                        ModBlocks.LIME_ENCHANTING_TABLE.get(),
-                        ModBlocks.PINK_ENCHANTING_TABLE.get(),
-                        ModBlocks.GRAY_ENCHANTING_TABLE.get(),
-                        ModBlocks.LIGHT_GRAY_ENCHANTING_TABLE.get(),
-                        ModBlocks.CYAN_ENCHANTING_TABLE.get(),
-                        ModBlocks.PURPLE_ENCHANTING_TABLE.get(),
-                        ModBlocks.BLUE_ENCHANTING_TABLE.get(),
-                        ModBlocks.GREEN_ENCHANTING_TABLE.get());
+                .add(WHITE_ENCHANTING_TABLE.get(),
+                        ORANGE_ENCHANTING_TABLE.get(),
+                        MAGENTA_ENCHANTING_TABLE.get(),
+                        LIGHT_BLUE_ENCHANTING_TABLE.get(),
+                        YELLOW_ENCHANTING_TABLE.get(),
+                        LIME_ENCHANTING_TABLE.get(),
+                        PINK_ENCHANTING_TABLE.get(),
+                        GRAY_ENCHANTING_TABLE.get(),
+                        LIGHT_GRAY_ENCHANTING_TABLE.get(),
+                        CYAN_ENCHANTING_TABLE.get(),
+                        PURPLE_ENCHANTING_TABLE.get(),
+                        BLUE_ENCHANTING_TABLE.get(),
+                        BROWN_ENCHANTING_TABLE.get(),
+                        GREEN_ENCHANTING_TABLE.get(),
+                        BLACK_ENCHANTING_TABLE.get());
 
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.WHITE_ENCHANTING_TABLE.get(),
-                        ModBlocks.ORANGE_ENCHANTING_TABLE.get(),
-                        ModBlocks.MAGENTA_ENCHANTING_TABLE.get(),
-                        ModBlocks.LIGHT_BLUE_ENCHANTING_TABLE.get(),
-                        ModBlocks.YELLOW_ENCHANTING_TABLE.get(),
-                        ModBlocks.LIME_ENCHANTING_TABLE.get(),
-                        ModBlocks.PINK_ENCHANTING_TABLE.get(),
-                        ModBlocks.GRAY_ENCHANTING_TABLE.get(),
-                        ModBlocks.LIGHT_GRAY_ENCHANTING_TABLE.get(),
-                        ModBlocks.CYAN_ENCHANTING_TABLE.get(),
-                        ModBlocks.PURPLE_ENCHANTING_TABLE.get(),
-                        ModBlocks.BLUE_ENCHANTING_TABLE.get(),
-                        ModBlocks.GREEN_ENCHANTING_TABLE.get());
+                .add(WHITE_ENCHANTING_TABLE.get(),
+                        ORANGE_ENCHANTING_TABLE.get(),
+                        MAGENTA_ENCHANTING_TABLE.get(),
+                        LIGHT_BLUE_ENCHANTING_TABLE.get(),
+                        YELLOW_ENCHANTING_TABLE.get(),
+                        LIME_ENCHANTING_TABLE.get(),
+                        PINK_ENCHANTING_TABLE.get(),
+                        GRAY_ENCHANTING_TABLE.get(),
+                        LIGHT_GRAY_ENCHANTING_TABLE.get(),
+                        CYAN_ENCHANTING_TABLE.get(),
+                        PURPLE_ENCHANTING_TABLE.get(),
+                        BLUE_ENCHANTING_TABLE.get(),
+                        BROWN_ENCHANTING_TABLE.get(),
+                        GREEN_ENCHANTING_TABLE.get(),
+                        BLACK_ENCHANTING_TABLE.get());
 
 
     }

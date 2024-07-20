@@ -25,7 +25,9 @@ public class ModBlockEntities {
                             ModBlocks.CYAN_ENCHANTING_TABLE.get(),
                             ModBlocks.PURPLE_ENCHANTING_TABLE.get(),
                             ModBlocks.BLUE_ENCHANTING_TABLE.get(),
-                            ModBlocks.GREEN_ENCHANTING_TABLE.get())
+                            ModBlocks.BROWN_ENCHANTING_TABLE.get(),
+                            ModBlocks.GREEN_ENCHANTING_TABLE.get(),
+                            ModBlocks.BLACK_ENCHANTING_TABLE.get())
                     .build(null));
 
     public static void register(IEventBus eventBus) {

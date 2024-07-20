@@ -38,7 +38,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         addEnchantingTableRecipes(pRecipeOutput, CYAN_ENCHANTING_TABLE, CYAN_CARPET, CYAN_DYE);
         addEnchantingTableRecipes(pRecipeOutput, PURPLE_ENCHANTING_TABLE, PURPLE_CARPET, PURPLE_DYE);
         addEnchantingTableRecipes(pRecipeOutput, BLUE_ENCHANTING_TABLE, BLUE_CARPET, BLUE_DYE);
+        addEnchantingTableRecipes(pRecipeOutput, BROWN_ENCHANTING_TABLE, BROWN_CARPET, BROWN_DYE);
         addEnchantingTableRecipes(pRecipeOutput, GREEN_ENCHANTING_TABLE, GREEN_CARPET, GREEN_DYE);
+        addEnchantingTableRecipes(pRecipeOutput, BLACK_ENCHANTING_TABLE, BLACK_CARPET, BLACK_DYE);
     }
     public void addEnchantingTableRecipes(RecipeOutput recipeOutput, RegistryObject<Block> block, Item carpetItem, Item dyeItem) {
         ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, block.get())

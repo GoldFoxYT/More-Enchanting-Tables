@@ -32,7 +32,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         createCustomEnchantingTable(CYAN_ENCHANTING_TABLE);
         createCustomEnchantingTable(PURPLE_ENCHANTING_TABLE);
         createCustomEnchantingTable(BLUE_ENCHANTING_TABLE);
+        createCustomEnchantingTable(BROWN_ENCHANTING_TABLE);
         createCustomEnchantingTable(GREEN_ENCHANTING_TABLE);
+        createCustomEnchantingTable(BLACK_ENCHANTING_TABLE);
     }
     private void createCustomEnchantingTable(RegistryObject<Block> registryObject) {
         Block block = registryObject.get();

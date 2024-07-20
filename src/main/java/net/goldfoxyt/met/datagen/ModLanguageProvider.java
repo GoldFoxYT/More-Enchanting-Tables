@@ -26,7 +26,9 @@ public class ModLanguageProvider extends LanguageProvider{
         addBlock(CYAN_ENCHANTING_TABLE, "Cyan Enchanting Table");
         addBlock(PURPLE_ENCHANTING_TABLE, "Purple Enchanting Table");
         addBlock(BLUE_ENCHANTING_TABLE, "Blue Enchanting Table");
+        addBlock(BROWN_ENCHANTING_TABLE, "Brown Enchanting Table");
         addBlock(GREEN_ENCHANTING_TABLE, "Green Enchanting Table");
+        addBlock(BLACK_ENCHANTING_TABLE, "Black Enchanting Table");
     }
     public void addCreativeModeTab(ResourceLocation key, String name) {
         add("creativetab." + key.getPath(), name);

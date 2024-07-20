@@ -1,5 +1,7 @@
-// 1.21	2024-07-21T01:30:50.2943088	Block States: met
+// 1.21	2024-07-21T01:50:36.473585	Block States: met
+afb7741f1119a9ee20d3153e273ee346df562717 assets/met/blockstates/black_enchanting_table.json
 e73b6b4bd42f244d0d331e71b9a8d4c45d55b400 assets/met/blockstates/blue_enchanting_table.json
+3c9413c1994c988342f1dab813e50e0e85fa566c assets/met/blockstates/brown_enchanting_table.json
 e8d0948aed5f379e8b05a89a97ef89628250442d assets/met/blockstates/cyan_enchanting_table.json
 1d1a12193bb5f4132db856b4fb58ae4c876afefa assets/met/blockstates/gray_enchanting_table.json
 b4950407cb0b3e27e7dab3632a758719764385de assets/met/blockstates/green_enchanting_table.json
@@ -12,7 +14,9 @@ a6cabfad791aaaef79146e475567226f728fdf08 assets/met/blockstates/pink_enchanting_
 c67cf03166ae862c415ce8e73b1bccceece86d81 assets/met/blockstates/purple_enchanting_table.json
 d8d2a79d703a2b8d34f6ca7ff3f20df2196406cc assets/met/blockstates/white_enchanting_table.json
 8c244ae7f0c6f5bbc95682e4299e1d2f68d6517e assets/met/blockstates/yellow_enchanting_table.json
+6c2be168b19a2684a9e6bf527d79d6f43c71649a assets/met/models/block/black_enchanting_table.json
 7a90aee6d2b1e919e02004bee92b5f1ed3d1a6f9 assets/met/models/block/blue_enchanting_table.json
+52d10bcc288bccb55d7376028a4070c0f14a6be7 assets/met/models/block/brown_enchanting_table.json
 5abdd748ae4e93ac9b600ab5116090cd0e28a339 assets/met/models/block/cyan_enchanting_table.json
 b04342b46b5a87e460dd02000c187a67e3a2e5a3 assets/met/models/block/gray_enchanting_table.json
 619bd182a13bb266a66388be642d56db2ee0a4c7 assets/met/models/block/green_enchanting_table.json
@@ -25,7 +29,9 @@ ac2e4826b897db585c5d976fd3dd052b8bd148ba assets/met/models/block/orange_enchanti
 23d75b0a3921aba060fbe1881ca884a32486419a assets/met/models/block/purple_enchanting_table.json
 6b285b497802a4492d5fea232fe943f93e28b3b7 assets/met/models/block/white_enchanting_table.json
 293d8b64f2a1a9a8bd2b7c098a42ec412e5973fb assets/met/models/block/yellow_enchanting_table.json
+8fd77b47db6ea9975ae9f94cdf5449801945e236 assets/met/models/item/black_enchanting_table.json
 0c6b432ba202ba9b5127ca2aea3e5cc7647a1c59 assets/met/models/item/blue_enchanting_table.json
+3dce697c561e81454a347a2041c7d68f76040aea assets/met/models/item/brown_enchanting_table.json
 2f25af58a10308ee90200aad9be2a525d08cf92b assets/met/models/item/cyan_enchanting_table.json
 89f75f00e3cdf2d9e8d3b7da81a95d1ecdb2ac23 assets/met/models/item/gray_enchanting_table.json
 71c6d117b8f92ee86870231be61f7069837deb12 assets/met/models/item/green_enchanting_table.json

@@ -1,36 +1,36 @@
-[21Jul2024 01:30:39.007] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 17, --assetsDir, C:\Users\bijad\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, met, --all, --output, D:\GoldFoxYT\Coding\mods\Colorful Enchanting Tables\src\generated\resources, --existing, D:\GoldFoxYT\Coding\mods\Colorful Enchanting Tables\src\main\resources, --mixin.config, mixins.met.json]
-[21Jul2024 01:30:39.011] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 21.0.2+13-LTS-58
-[21Jul2024 01:30:39.014] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.1 starting: java version 21.0.2 by Oracle Corporation; OS Windows 11 arch amd64 version 10.0
-[21Jul2024 01:30:39.163] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
-[21Jul2024 01:30:39.309] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///C:/Users/bijad/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=UNKNOWN
-[21Jul2024 01:30:40.876] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[21Jul2024 01:30:41.920] [main/WARN] [mixin/]: Compatibility level JAVA_21 specified by mixins.met.json is higher than the maximum level supported by this version of mixin (JAVA_13).
-[21Jul2024 01:30:41.921] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
-[21Jul2024 01:30:41.921] [main/ERROR] [mixin/]: Mixin config mixins.met.json does not specify "minVersion" or "requiredFeatures" property
-[21Jul2024 01:30:41.929] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\bijad\.gradle\caches\forge_gradle\assets, --assetIndex, 17, --mod, met, --all, --output, D:\GoldFoxYT\Coding\mods\Colorful Enchanting Tables\src\generated\resources, --existing, D:\GoldFoxYT\Coding\mods\Colorful Enchanting Tables\src\main\resources]
-[21Jul2024 01:30:41.958] [main/INFO] [mixin/]: Attempting to load Fernflower decompiler (Threaded mode)
-[21Jul2024 01:30:41.960] [main/INFO] [mixin/]: Fernflower could not be loaded, exported classes will not be decompiled. NoClassDefFoundError: org/jetbrains/java/decompiler/main/extern/IResultSaver
-[21Jul2024 01:30:41.967] [main/INFO] [mixin/]: Preparing mixins for MixinEnvironment[DEFAULT]
-[21Jul2024 01:30:41.968] [main/INFO] [mixin/]: Selecting config mixins.met.json
-[21Jul2024 01:30:41.972] [main/WARN] [mixin/]: Reference map 'met.mixin-refmap.json' for mixins.met.json could not be read. If this is a development environment you can ignore this message
-[21Jul2024 01:30:41.973] [main/INFO] [mixin/]: Preparing mixins.met.json (1)
-[21Jul2024 01:30:42.015] [main/WARN] [mixin/]: Mixin environment was unable to detect the current side, sided mixins will not be applied
-[21Jul2024 01:30:44.724] [main/INFO] [mixin/]: Mixing EnchantmentMenuMixin from mixins.met.json into net.minecraft.world.inventory.EnchantmentMenu
-[21Jul2024 01:30:48.803] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 51.0.26, for MC 1.21 with MCP 20240613.102039
-[21Jul2024 01:30:48.803] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v51.0.26 Initialized
-[21Jul2024 01:30:48.828] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
-[21Jul2024 01:30:49.667] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [met]
-[21Jul2024 01:30:49.755] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/bijad/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.26_mapped_parchment_2024.07.07-1.21/forge-1.21-51.0.26_mapped_parchment_2024.07.07-1.21.jar%230!/assets/.mcassetsroot' uses unexpected schema
-[21Jul2024 01:30:49.755] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/bijad/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.26_mapped_parchment_2024.07.07-1.21/forge-1.21-51.0.26_mapped_parchment_2024.07.07-1.21.jar%230!/data/.mcassetsroot' uses unexpected schema
-[21Jul2024 01:30:49.908] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[21Jul2024 01:30:50.133] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 223 ms
-[21Jul2024 01:30:50.133] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[21Jul2024 01:30:50.154] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 20 ms
-[21Jul2024 01:30:50.154] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block Tags
-[21Jul2024 01:30:50.163] [main/INFO] [net.minecraft.data.DataGenerator/]: Block Tags finished after 9 ms
-[21Jul2024 01:30:50.163] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: met
-[21Jul2024 01:30:50.286] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: met finished after 122 ms
-[21Jul2024 01:30:50.286] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Languages: en_us
-[21Jul2024 01:30:50.288] [main/INFO] [net.minecraft.data.DataGenerator/]: Languages: en_us finished after 1 ms
-[21Jul2024 01:30:50.288] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 380 ms
-[21Jul2024 01:30:50.301] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 107, old count: 91, new count: 108, removed stale: 0, written: 19
+[21Jul2024 01:50:27.398] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 17, --assetsDir, C:\Users\bijad\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, met, --all, --output, D:\GoldFoxYT\Coding\mods\Colorful Enchanting Tables\src\generated\resources, --existing, D:\GoldFoxYT\Coding\mods\Colorful Enchanting Tables\src\main\resources, --mixin.config, mixins.met.json]
+[21Jul2024 01:50:27.401] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 21.0.2+13-LTS-58
+[21Jul2024 01:50:27.403] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.1 starting: java version 21.0.2 by Oracle Corporation; OS Windows 11 arch amd64 version 10.0
+[21Jul2024 01:50:27.518] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
+[21Jul2024 01:50:27.637] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///C:/Users/bijad/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=UNKNOWN
+[21Jul2024 01:50:28.854] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[21Jul2024 01:50:29.744] [main/WARN] [mixin/]: Compatibility level JAVA_21 specified by mixins.met.json is higher than the maximum level supported by this version of mixin (JAVA_13).
+[21Jul2024 01:50:29.745] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
+[21Jul2024 01:50:29.745] [main/ERROR] [mixin/]: Mixin config mixins.met.json does not specify "minVersion" or "requiredFeatures" property
+[21Jul2024 01:50:29.752] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\bijad\.gradle\caches\forge_gradle\assets, --assetIndex, 17, --mod, met, --all, --output, D:\GoldFoxYT\Coding\mods\Colorful Enchanting Tables\src\generated\resources, --existing, D:\GoldFoxYT\Coding\mods\Colorful Enchanting Tables\src\main\resources]
+[21Jul2024 01:50:29.788] [main/INFO] [mixin/]: Attempting to load Fernflower decompiler (Threaded mode)
+[21Jul2024 01:50:29.791] [main/INFO] [mixin/]: Fernflower could not be loaded, exported classes will not be decompiled. NoClassDefFoundError: org/jetbrains/java/decompiler/main/extern/IResultSaver
+[21Jul2024 01:50:29.797] [main/INFO] [mixin/]: Preparing mixins for MixinEnvironment[DEFAULT]
+[21Jul2024 01:50:29.798] [main/INFO] [mixin/]: Selecting config mixins.met.json
+[21Jul2024 01:50:29.802] [main/WARN] [mixin/]: Reference map 'met.mixin-refmap.json' for mixins.met.json could not be read. If this is a development environment you can ignore this message
+[21Jul2024 01:50:29.803] [main/INFO] [mixin/]: Preparing mixins.met.json (1)
+[21Jul2024 01:50:29.842] [main/WARN] [mixin/]: Mixin environment was unable to detect the current side, sided mixins will not be applied
+[21Jul2024 01:50:31.897] [main/INFO] [mixin/]: Mixing EnchantmentMenuMixin from mixins.met.json into net.minecraft.world.inventory.EnchantmentMenu
+[21Jul2024 01:50:35.158] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 51.0.26, for MC 1.21 with MCP 20240613.102039
+[21Jul2024 01:50:35.158] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v51.0.26 Initialized
+[21Jul2024 01:50:35.183] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
+[21Jul2024 01:50:35.783] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [met]
+[21Jul2024 01:50:35.869] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/bijad/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.26_mapped_parchment_2024.07.07-1.21/forge-1.21-51.0.26_mapped_parchment_2024.07.07-1.21.jar%230!/assets/.mcassetsroot' uses unexpected schema
+[21Jul2024 01:50:35.870] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/bijad/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.26_mapped_parchment_2024.07.07-1.21/forge-1.21-51.0.26_mapped_parchment_2024.07.07-1.21.jar%230!/data/.mcassetsroot' uses unexpected schema
+[21Jul2024 01:50:36.029] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[21Jul2024 01:50:36.284] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 254 ms
+[21Jul2024 01:50:36.284] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[21Jul2024 01:50:36.310] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 25 ms
+[21Jul2024 01:50:36.310] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block Tags
+[21Jul2024 01:50:36.323] [main/INFO] [net.minecraft.data.DataGenerator/]: Block Tags finished after 12 ms
+[21Jul2024 01:50:36.324] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: met
+[21Jul2024 01:50:36.465] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: met finished after 141 ms
+[21Jul2024 01:50:36.465] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Languages: en_us
+[21Jul2024 01:50:36.467] [main/INFO] [net.minecraft.data.DataGenerator/]: Languages: en_us finished after 1 ms
+[21Jul2024 01:50:36.467] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 437 ms
+[21Jul2024 01:50:36.480] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 123, old count: 107, new count: 124, removed stale: 0, written: 19

@@ -12,6 +12,8 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.HashSet;
 import java.util.Set;
 
+import static net.goldfoxyt.met.block.ModBlocks.*;
+
 public class ModBlockLootTables extends BlockLootSubProvider{
     private static final Set<Item> EXPLOSION_RESISTANT = new HashSet<>();
 
@@ -21,23 +23,25 @@ public class ModBlockLootTables extends BlockLootSubProvider{
 
     @Override
     protected void generate() {
-        this.add(ModBlocks.WHITE_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
-        this.add(ModBlocks.ORANGE_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
-        this.add(ModBlocks.MAGENTA_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
-        this.add(ModBlocks.LIGHT_BLUE_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
-        this.add(ModBlocks.YELLOW_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
-        this.add(ModBlocks.LIME_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
-        this.add(ModBlocks.PINK_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
-        this.add(ModBlocks.GRAY_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
-        this.add(ModBlocks.LIGHT_GRAY_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
-        this.add(ModBlocks.CYAN_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
-        this.add(ModBlocks.PURPLE_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
-        this.add(ModBlocks.BLUE_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
-        this.add(ModBlocks.GREEN_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
+        this.add(WHITE_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
+        this.add(ORANGE_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
+        this.add(MAGENTA_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
+        this.add(LIGHT_BLUE_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
+        this.add(YELLOW_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
+        this.add(LIME_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
+        this.add(PINK_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
+        this.add(GRAY_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
+        this.add(LIGHT_GRAY_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
+        this.add(CYAN_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
+        this.add(PURPLE_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
+        this.add(BLUE_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
+        this.add(BROWN_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
+        this.add(GREEN_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
+        this.add(BLACK_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
     }
 
     @Override
     protected Iterable<Block> getKnownBlocks() {
-        return ModBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
+        return BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
     }
 }

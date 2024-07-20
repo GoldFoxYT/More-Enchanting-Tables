@@ -1,5 +1,7 @@
-// 1.21	2024-07-21T01:30:50.2916708	Loot Tables
+// 1.21	2024-07-21T01:50:36.4700389	Loot Tables
+7b3f0fb28eaa38577db19c6bebb7241d76654ee7 data/met/loot_table/blocks/black_enchanting_table.json
 8ecf054822294c7a08f5b206642fdeb3f71c3423 data/met/loot_table/blocks/blue_enchanting_table.json
+9b3eb76c38905e3fbadeca7d324815c42db0b06a data/met/loot_table/blocks/brown_enchanting_table.json
 ccaf1b5c572dbedd2cfc629396c4817d2730f31b data/met/loot_table/blocks/cyan_enchanting_table.json
 36dd9479c774443ae4177be4be7c7def9754ce2e data/met/loot_table/blocks/gray_enchanting_table.json
 61414519c525d94659aed653bc96bd7c0ba439c5 data/met/loot_table/blocks/green_enchanting_table.json
