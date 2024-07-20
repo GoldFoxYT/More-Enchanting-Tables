@@ -130,7 +130,6 @@ public class ColoredEnchantingTableBlockEntity extends BlockEntity implements Na
         super.collectImplicitComponents(pComponents);
         pComponents.set(DataComponents.CUSTOM_NAME, this.name);
     }
-
     public void removeComponentsFromTag(CompoundTag pTag) {
         pTag.remove("CustomName");
     }

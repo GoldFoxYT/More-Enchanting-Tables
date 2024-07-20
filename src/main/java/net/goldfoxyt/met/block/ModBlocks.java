@@ -30,19 +30,23 @@ public class ModBlocks {
             () -> new ColoredEnchantingTable(Block.Properties.ofFullCopy(Blocks.ENCHANTING_TABLE).mapColor(DyeColor.LIGHT_BLUE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> YELLOW_ENCHANTING_TABLE = registerBlock("yellow_enchanting_table",
             () -> new ColoredEnchantingTable(Block.Properties.ofFullCopy(Blocks.ENCHANTING_TABLE).mapColor(DyeColor.YELLOW).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> LIME_ENCHANTING_TABLE = registerBlock("lime_enchanting_table",
+            () -> new ColoredEnchantingTable(Block.Properties.ofFullCopy(Blocks.ENCHANTING_TABLE).mapColor(DyeColor.LIME).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> PINK_ENCHANTING_TABLE = registerBlock("pink_enchanting_table",
+            () -> new ColoredEnchantingTable(Block.Properties.ofFullCopy(Blocks.ENCHANTING_TABLE).mapColor(DyeColor.PINK).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> BLUE_ENCHANTING_TABLE = registerBlock("blue_enchanting_table",
             () -> new ColoredEnchantingTable(Block.Properties.ofFullCopy(Blocks.ENCHANTING_TABLE).mapColor(DyeColor.BLUE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> GREEN_ENCHANTING_TABLE = registerBlock("green_enchanting_table",
             () -> new ColoredEnchantingTable(Block.Properties.ofFullCopy(Blocks.ENCHANTING_TABLE).mapColor(DyeColor.GREEN).requiresCorrectToolForDrops()));
 
     /*
-    LIME
-    PINK
     GRAY
     LIGHT_GRAY
     CYAN
     PURPLE
+    BLUE
     BROWN
+    GREEN
     BLACK
      */
 

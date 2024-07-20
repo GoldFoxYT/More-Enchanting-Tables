@@ -25,6 +25,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         createCustomEnchantingTable(MAGENTA_ENCHANTING_TABLE);
         createCustomEnchantingTable(LIGHT_BLUE_ENCHANTING_TABLE);
         createCustomEnchantingTable(YELLOW_ENCHANTING_TABLE);
+        createCustomEnchantingTable(LIME_ENCHANTING_TABLE);
+        createCustomEnchantingTable(PINK_ENCHANTING_TABLE);
         createCustomEnchantingTable(BLUE_ENCHANTING_TABLE);
         createCustomEnchantingTable(GREEN_ENCHANTING_TABLE);
     }

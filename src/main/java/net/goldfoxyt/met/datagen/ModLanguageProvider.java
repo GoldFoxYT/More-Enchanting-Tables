@@ -19,6 +19,8 @@ public class ModLanguageProvider extends LanguageProvider{
         addBlock(MAGENTA_ENCHANTING_TABLE, "Magenta Enchanting Table");
         addBlock(LIGHT_BLUE_ENCHANTING_TABLE, "Light Blue Enchanting Table");
         addBlock(YELLOW_ENCHANTING_TABLE, "Yellow Enchanting Table");
+        addBlock(LIME_ENCHANTING_TABLE, "Lime Enchanting Table");
+        addBlock(PINK_ENCHANTING_TABLE, "Pink Enchanting Table");
         addBlock(BLUE_ENCHANTING_TABLE, "Blue Enchanting Table");
         addBlock(GREEN_ENCHANTING_TABLE, "Green Enchanting Table");
     }
