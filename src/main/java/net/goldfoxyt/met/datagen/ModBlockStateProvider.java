@@ -1,7 +1,6 @@
 package net.goldfoxyt.met.datagen;
 
 import net.goldfoxyt.met.Met;
-import net.goldfoxyt.met.block.ModBlocks;
 import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
@@ -9,6 +8,8 @@ import net.minecraftforge.client.model.generators.*;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import static net.goldfoxyt.met.block.ModBlocks.*;
 
 public class ModBlockStateProvider extends BlockStateProvider {
 
@@ -19,19 +20,21 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        createCustomEnchantingTable(ModBlocks.WHITE_ENCHANTING_TABLE);
-        createCustomEnchantingTable(ModBlocks.ORANGE_ENCHANTING_TABLE);
-        createCustomEnchantingTable(ModBlocks.MAGENTA_ENCHANTING_TABLE);
-        createCustomEnchantingTable(ModBlocks.BLUE_ENCHANTING_TABLE);
-        createCustomEnchantingTable(ModBlocks.GREEN_ENCHANTING_TABLE);
+        createCustomEnchantingTable(WHITE_ENCHANTING_TABLE);
+        createCustomEnchantingTable(ORANGE_ENCHANTING_TABLE);
+        createCustomEnchantingTable(MAGENTA_ENCHANTING_TABLE);
+        createCustomEnchantingTable(LIGHT_BLUE_ENCHANTING_TABLE);
+        createCustomEnchantingTable(YELLOW_ENCHANTING_TABLE);
+        createCustomEnchantingTable(BLUE_ENCHANTING_TABLE);
+        createCustomEnchantingTable(GREEN_ENCHANTING_TABLE);
     }
     private void createCustomEnchantingTable(RegistryObject<Block> registryObject) {
         Block block = registryObject.get();
         String name = ForgeRegistries.BLOCKS.getKey(block).getPath();
 
         BlockModelBuilder model = models().withExistingParent(name, "block/block")
-                .texture("particle", modLoc("block/" + name + "_bottom"))
-                .texture("bottom", modLoc("block/" + name + "_bottom"))
+                .texture("particle", mcLoc("block/enchanting_table_bottom"))
+                .texture("bottom", mcLoc("block/enchanting_table_bottom"))
                 .texture("top", modLoc("block/" + name + "_top"))
                 .texture("side", modLoc("block/" + name + "_side"));
 

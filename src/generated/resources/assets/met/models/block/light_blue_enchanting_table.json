@@ -42,7 +42,7 @@
   "textures": {
     "bottom": "minecraft:block/enchanting_table_bottom",
     "particle": "minecraft:block/enchanting_table_bottom",
-    "side": "met:block/orange_enchanting_table_side",
-    "top": "met:block/orange_enchanting_table_top"
+    "side": "met:block/light_blue_enchanting_table_side",
+    "top": "met:block/light_blue_enchanting_table_top"
   }
 }

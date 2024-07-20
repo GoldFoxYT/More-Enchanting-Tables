@@ -1,7 +1,7 @@
 package net.goldfoxyt.met.datagen;
 
 import net.goldfoxyt.met.Met;
-import net.goldfoxyt.met.datagen.loot.ModLanguageProvider;
+import net.goldfoxyt.met.datagen.loot.ModLootTableProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;

@@ -24,6 +24,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.WHITE_ENCHANTING_TABLE.get(),
                         ModBlocks.ORANGE_ENCHANTING_TABLE.get(),
                         ModBlocks.MAGENTA_ENCHANTING_TABLE.get(),
+                        ModBlocks.LIGHT_BLUE_ENCHANTING_TABLE.get(),
+                        ModBlocks.YELLOW_ENCHANTING_TABLE.get(),
                         ModBlocks.BLUE_ENCHANTING_TABLE.get(),
                         ModBlocks.GREEN_ENCHANTING_TABLE.get());
 
@@ -31,6 +33,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.WHITE_ENCHANTING_TABLE.get(),
                         ModBlocks.ORANGE_ENCHANTING_TABLE.get(),
+                        ModBlocks.MAGENTA_ENCHANTING_TABLE.get(),
+                        ModBlocks.LIGHT_BLUE_ENCHANTING_TABLE.get(),
+                        ModBlocks.YELLOW_ENCHANTING_TABLE.get(),
                         ModBlocks.BLUE_ENCHANTING_TABLE.get(),
                         ModBlocks.GREEN_ENCHANTING_TABLE.get());
 

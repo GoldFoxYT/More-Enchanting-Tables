@@ -1,4 +1,4 @@
-package net.goldfoxyt.met.datagen.loot;
+package net.goldfoxyt.met.datagen;
 
 import net.goldfoxyt.met.Met;
 import net.minecraft.data.PackOutput;
@@ -17,6 +17,8 @@ public class ModLanguageProvider extends LanguageProvider{
         addBlock(WHITE_ENCHANTING_TABLE, "White Enchanting Table");
         addBlock(ORANGE_ENCHANTING_TABLE, "Orange Enchanting Table");
         addBlock(MAGENTA_ENCHANTING_TABLE, "Magenta Enchanting Table");
+        addBlock(LIGHT_BLUE_ENCHANTING_TABLE, "Light Blue Enchanting Table");
+        addBlock(YELLOW_ENCHANTING_TABLE, "Yellow Enchanting Table");
         addBlock(BLUE_ENCHANTING_TABLE, "Blue Enchanting Table");
         addBlock(GREEN_ENCHANTING_TABLE, "Green Enchanting Table");
     }

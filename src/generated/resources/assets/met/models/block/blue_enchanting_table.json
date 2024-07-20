@@ -40,8 +40,8 @@
     }
   ],
   "textures": {
-    "bottom": "met:block/blue_enchanting_table_bottom",
-    "particle": "met:block/blue_enchanting_table_bottom",
+    "bottom": "minecraft:block/enchanting_table_bottom",
+    "particle": "minecraft:block/enchanting_table_bottom",
     "side": "met:block/blue_enchanting_table_side",
     "top": "met:block/blue_enchanting_table_top"
   }

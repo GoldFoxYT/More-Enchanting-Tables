@@ -29,6 +29,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         addEnchantingTableRecipes(pRecipeOutput, WHITE_ENCHANTING_TABLE, WHITE_CARPET, WHITE_DYE);
         addEnchantingTableRecipes(pRecipeOutput, ORANGE_ENCHANTING_TABLE, ORANGE_CARPET, ORANGE_DYE);
         addEnchantingTableRecipes(pRecipeOutput, MAGENTA_ENCHANTING_TABLE, MAGENTA_CARPET, MAGENTA_DYE);
+        addEnchantingTableRecipes(pRecipeOutput, LIGHT_BLUE_ENCHANTING_TABLE, LIGHT_BLUE_CARPET, LIGHT_BLUE_DYE);
+        addEnchantingTableRecipes(pRecipeOutput, YELLOW_ENCHANTING_TABLE, YELLOW_CARPET, YELLOW_DYE);
         addEnchantingTableRecipes(pRecipeOutput, BLUE_ENCHANTING_TABLE, BLUE_CARPET, BLUE_DYE);
         addEnchantingTableRecipes(pRecipeOutput, GREEN_ENCHANTING_TABLE, GREEN_CARPET, GREEN_DYE);
     }

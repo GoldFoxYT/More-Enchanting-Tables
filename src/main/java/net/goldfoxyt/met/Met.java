@@ -53,6 +53,8 @@ public class Met {
             event.accept(ModBlocks.WHITE_ENCHANTING_TABLE);
             event.accept(ModBlocks.ORANGE_ENCHANTING_TABLE);
             event.accept(ModBlocks.MAGENTA_ENCHANTING_TABLE);
+            event.accept(ModBlocks.LIGHT_BLUE_ENCHANTING_TABLE);
+            event.accept(ModBlocks.YELLOW_ENCHANTING_TABLE);
             event.accept(ModBlocks.BLUE_ENCHANTING_TABLE);
             event.accept(ModBlocks.GREEN_ENCHANTING_TABLE);
         }
