@@ -30,6 +30,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.PINK_ENCHANTING_TABLE.get(),
                         ModBlocks.GRAY_ENCHANTING_TABLE.get(),
                         ModBlocks.LIGHT_GRAY_ENCHANTING_TABLE.get(),
+                        ModBlocks.CYAN_ENCHANTING_TABLE.get(),
+                        ModBlocks.PURPLE_ENCHANTING_TABLE.get(),
                         ModBlocks.BLUE_ENCHANTING_TABLE.get(),
                         ModBlocks.GREEN_ENCHANTING_TABLE.get());
 
@@ -44,6 +46,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.PINK_ENCHANTING_TABLE.get(),
                         ModBlocks.GRAY_ENCHANTING_TABLE.get(),
                         ModBlocks.LIGHT_GRAY_ENCHANTING_TABLE.get(),
+                        ModBlocks.CYAN_ENCHANTING_TABLE.get(),
+                        ModBlocks.PURPLE_ENCHANTING_TABLE.get(),
                         ModBlocks.BLUE_ENCHANTING_TABLE.get(),
                         ModBlocks.GREEN_ENCHANTING_TABLE.get());
 

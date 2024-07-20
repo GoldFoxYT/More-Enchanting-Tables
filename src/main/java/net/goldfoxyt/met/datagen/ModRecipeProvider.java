@@ -35,6 +35,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         addEnchantingTableRecipes(pRecipeOutput, PINK_ENCHANTING_TABLE, PINK_CARPET, PINK_DYE);
         addEnchantingTableRecipes(pRecipeOutput, GRAY_ENCHANTING_TABLE, GRAY_CARPET, GRAY_DYE);
         addEnchantingTableRecipes(pRecipeOutput, LIGHT_GRAY_ENCHANTING_TABLE, LIGHT_GRAY_CARPET, LIGHT_GRAY_DYE);
+        addEnchantingTableRecipes(pRecipeOutput, CYAN_ENCHANTING_TABLE, CYAN_CARPET, CYAN_DYE);
+        addEnchantingTableRecipes(pRecipeOutput, PURPLE_ENCHANTING_TABLE, PURPLE_CARPET, PURPLE_DYE);
         addEnchantingTableRecipes(pRecipeOutput, BLUE_ENCHANTING_TABLE, BLUE_CARPET, BLUE_DYE);
         addEnchantingTableRecipes(pRecipeOutput, GREEN_ENCHANTING_TABLE, GREEN_CARPET, GREEN_DYE);
     }
