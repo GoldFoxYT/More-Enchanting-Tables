@@ -28,6 +28,8 @@ public class ModBlockLootTables extends BlockLootSubProvider{
         this.add(ModBlocks.YELLOW_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
         this.add(ModBlocks.LIME_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
         this.add(ModBlocks.PINK_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
+        this.add(ModBlocks.GRAY_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
+        this.add(ModBlocks.LIGHT_GRAY_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
         this.add(ModBlocks.BLUE_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
         this.add(ModBlocks.GREEN_ENCHANTING_TABLE.get(), (block) -> this.createNameableBlockEntityTable(block));
     }

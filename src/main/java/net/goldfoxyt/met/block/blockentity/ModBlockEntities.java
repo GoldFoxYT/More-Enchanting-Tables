@@ -20,6 +20,8 @@ public class ModBlockEntities {
                             ModBlocks.YELLOW_ENCHANTING_TABLE.get(),
                             ModBlocks.LIME_ENCHANTING_TABLE.get(),
                             ModBlocks.PINK_ENCHANTING_TABLE.get(),
+                            ModBlocks.GRAY_ENCHANTING_TABLE.get(),
+                            ModBlocks.LIGHT_GRAY_ENCHANTING_TABLE.get(),
                             ModBlocks.BLUE_ENCHANTING_TABLE.get(),
                             ModBlocks.GREEN_ENCHANTING_TABLE.get())
                     .build(null));
